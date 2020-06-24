@@ -3,6 +3,10 @@
 
 ## STARTING 🚀
  _These instructions will allow you to obtain a copy of the running project on your local machine for development and testing purposes._
+```
+git clone https://github.com/kuzeofficial/alienblock.git
+```
+Or download in zip folder
 
  See ** Deployment ** to learn how to deploy the project.
 
