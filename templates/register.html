@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="top">
+                    <img src="../static/img/index.png" height="110px" width="110px">ALIENLOGIN
+                </div>
+            </header>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="InputEmail">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="InputEmail" aria-describedby="EmailHelp" placeholder="youremail@yourserver.com">
+                    <small id="EmailHelp" class="form-text text-muted">We'll never share your email with anyone else</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputUsername">Username</label>
+                  <input type="username" class="form-control" name="username" id="InputUsername" aria-describedby="usernameHelp" placeholder="@yourusername">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword">Password</label>
+                  <input type="password" name="password" class="form-control" id="InputPassword">
+                </div>
+                <button type="submit" id="process-register" class="btn btn-success">Register</button>
+                <a href="/" class="btn btn-info ml-5"> « Back</a>
+            </form>
+            <footer>
+                <p class="mt-5">
+                    ©Copyright 2020 Made by Cristian Comas
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

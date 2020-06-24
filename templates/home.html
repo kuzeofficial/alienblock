@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <title>HOME</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="top">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <img class="navbar-brand" src="../static/img/index.png" height="110px" width="110px">ALIENBLOG</a>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                          <ul class="navbar-nav ml-5 mt-6 mt-lg-0">
+                            <li class="nav-item active ml-5 mt-1">
+                                <img src="../static/img/calendar3.svg">
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/calendar" >Calendar <span class="sr-only">(current)</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <form method="POST">
+                <div class="form">
+                    <label for="thisislabel"><h5>WRITE...</h5></label>
+                    <textarea name="content" class="form-control" id="FormTextarea" rows="5"></textarea>
+                    <input type="submit" value="POST" class="btn  btn-outline-success mt-4 ml-1">
+                </div>
+            </form>
+            <div class="entries">
+                {% for entry in entries %}
+                <div class=entry>
+                  <div class="entry-title">
+                      <h6>
+                      <span class="entry-date">‣ {{ entry[1] }}</span>
+                      </h6>
+                  </div>
+                  <p class="entry-content">{{ entry[2] }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
